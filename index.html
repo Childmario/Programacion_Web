@@ -39,18 +39,39 @@
 			<h1>Bienvenido a las prfoecias del clarin</h1>
 			<form name="botones">
 				<input type="text" name="txt">
-				<button type="submit" class="button_1">Cambiar estilo 1</button>
-				<button type="submit" class="button_1">Cambiar estilo 2</button>
-				<button type="submit" class="button_1">Cambiar estilo 3</button>
-				<button type="submit" class="button_1">Cambiar estilo 4</button>
-				<button type="submit" class="button_1">Cambiar estilo 5</button>
-				<input type="button" value="presione por favor" onClick="proceso_rojo()">
+				<input type="button" value="Oprima otros para ver que pasa" onClick="proceso_rojo()">
+				<button type="button" class="button_1" onClick="cambiar_fondo1()">Cambiar estilo 1</button>
+				<button type="button" class="button_1" onClick="cambiar_fondo2()">Cambiar estilo 2</button>
+				<button type="button" class="button_1" onClick="cambiar_fondo3()">Cambiar estilo 3</button>
+				<button type="button" class="button_1" onClick="cambiar_fondo4()">Cambiar estilo 4</button>
+				<button type="button" class="button_1" onClick="cambiar_fondo5()">Cambiar estilo 5</button>	
 			</form>
 			<script type="text/javascript">
 
 				function proceso_rojo(){
-					document.botones.txt.value = "hola amigo";
+					document.botones.txt.value = "Presione otro botón";
 				}
+
+				function cambiar_fondo1() {
+                obj = document.getElementById('newsletter');
+                obj.style.backgroundColor = (obj.style.backgroundColor == 'rgb(255, 255, 255)') ? 'transparent' : '#C4C428';
+            }
+				function cambiar_fondo2() {
+                obj = document.getElementById('newsletter');
+                obj.style.backgroundColor = (obj.style.backgroundColor == 'rgb(255, 255, 255)') ? 'transparent' : '#B16717';
+            }
+				function cambiar_fondo3() {
+                obj = document.getElementById('newsletter');
+                obj.style.backgroundColor = (obj.style.backgroundColor == 'rgb(255, 255, 255)') ? 'transparent' : '#DC3319';
+            }
+				function cambiar_fondo4() {
+                obj = document.getElementById('newsletter');
+                obj.style.backgroundColor = (obj.style.backgroundColor == 'rgb(255, 255, 255)') ? 'transparent' : '#13FF00';
+            }
+				function cambiar_fondo5() {
+                obj = document.getElementById('newsletter');
+                obj.style.backgroundColor = (obj.style.backgroundColor == 'rgb(255, 255, 255)') ? 'transparent' : '#8518BF';
+            }                                                
 
 			</script>
 		</div>
