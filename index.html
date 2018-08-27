@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-widht">
+	<meta name="description" content="Programacion Web">
+	<meta name="keyword" content="Laboratorio 0, Pruebas, Aprender">
+	<meta name="author" content="Mario Grajeda y Ricardo Hernandez">
+	<title>Proyecto 0 Mario Grajeda y Ricardo Hernandez</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/estilo.css">
+	<link rel="stylesheet" type="text/js" href="">
+
+
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1>Millenials</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="what.html.html">Que es Millenial</a></li>
+					<li><a href="aleatorio.html">Aleatorio</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="showcase">
+		<div class="container">
+			<h1>Profetas de la red</h1>
+			<p>Parrafo del clarin</p>
+		</div>
+	</section>
+	<section id="newsletter">
+		<div class="container">
+			<h1>Bienvenido a las prfoecias del clarin</h1>
+			<form name="botones">
+				<input type="text" name="txt">
+				<button type="submit" class="button_1">Cambiar estilo 1</button>
+				<button type="submit" class="button_1">Cambiar estilo 2</button>
+				<button type="submit" class="button_1">Cambiar estilo 3</button>
+				<button type="submit" class="button_1">Cambiar estilo 4</button>
+				<button type="submit" class="button_1">Cambiar estilo 5</button>
+				<input type="button" value="presione por favor" onClick="proceso_rojo()">
+			</form>
+			<script type="text/javascript">
+
+				function proceso_rojo(){
+					document.botones.txt.value = "hola amigo";
+				}
+
+			</script>
+		</div>
+	</section>
+	<section class="boxes">
+		
+		<div class="container">
+
+			<div class="box">
+			<h3>Futuro probable</h3>
+			<p>Hablemos de lo que espera la vida probablemente</p>
+			<img src="./img/cc.png">
+			</div>
+
+		<div class="box">
+			<h3>Futuro improbable</h3>
+			<p>Hablemos de lo que no se espera en la vida probablemente</p>
+			<img src="./img/maya.png">
+		</div>
+		<div class="box">
+			<h3>Futuro imposible</h3>
+			<p>Hablemos de lo que espera que nunca pase</p>
+			<img src="./img/no.png">
+		</div>			
+		</div>
+	</section>
+	<footer>
+		<p>Adivina adivinador, Copyright &copy; 2018</p>
+	</footer>
+</body>
+</html>
